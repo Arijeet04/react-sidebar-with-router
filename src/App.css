@@ -9,6 +9,9 @@
 
 .home,
 .reports,
+.support,
+.team,
+.messages,
 .products {
   display: flex;
   height: 90vh;
