@@ -11,6 +11,9 @@ import {
 import Products from "./routes/Products";
 import Home from "./routes/Home";
 import Reports from "./routes/Reports";
+import Messages from "./routes/Messages";
+import Support from "./routes/Support";
+import Team from "./routes/Team";
 import Navbar from "./components/Navbar";
 import "./App.css";
 
@@ -20,16 +23,6 @@ const AppLayout = () => (
     <Outlet />
   </>
 );
-
-// const router = createBrowserRouter(
-//   createRoutesFromElements(
-//     <Route element={<AppLayout />}>
-//       <Route path="/" element={<Home />} />
-//       <Route path="/products" element={<Products />} />
-//       <Route path="/reports" element={<Reports />} />
-//     </Route>
-//   )
-// );
 
 const router = createBrowserRouter([
   {
@@ -46,6 +39,18 @@ const router = createBrowserRouter([
       {
         path: "reports",
         element: <Reports />,
+      },
+      {
+        path: "messages",
+        element: <Messages />,
+      },
+      {
+        path: "support",
+        element: <Support />,
+      },
+      {
+        path: "team",
+        element: <Team />,
       },
     ],
   },
